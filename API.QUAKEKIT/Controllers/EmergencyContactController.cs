@@ -30,6 +30,20 @@ namespace API.QUAKEKIT.Controllers
             return CreatedAtRoute("GetEmergencyContact", new { id = emergencyContact.ecID.ToString() }, emergencyContact);
         }
 
+        [AllowAnonymous]
+        [HttpGet("{id:length(24)}", Name = "GetEmergencyContact")]
+        public ActionResult<EmergencyContact> Get(string id)
+        {
+            var emergencyContact = _emergencyContactService.Get(id);
+
+            if (emergencyContact == null)
+            {
+                return NotFound();
+            }
+
+            return emergencyContact;
+        }
+
         [HttpPut("{id:length(24)}")]
         public IActionResult Update(string id, EmergencyContact emergencyContactIn)
         {

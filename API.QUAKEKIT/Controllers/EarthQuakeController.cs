@@ -23,11 +23,25 @@ namespace API.QUAKEKIT.Controllers
         }
         [AllowAnonymous]
         [HttpPost]
-        public ActionResult<DamageReport> Create(EarthQuake earthQuake)
+        public ActionResult<EarthQuake> Create(EarthQuake earthQuake)
         {
             _earthQuakeService.Create(earthQuake);
 
             return CreatedAtRoute("GetEarthQuake", new { id = earthQuake.eqID.ToString() }, earthQuake);
+        }
+
+        [AllowAnonymous]
+        [HttpGet("{id:length(24)}", Name = "GetEarthQuake")]
+        public ActionResult<EarthQuake> Get(string id)
+        {
+            var earthQuake = _earthQuakeService.Get(id);
+
+            if (earthQuake == null)
+            {
+                return NotFound();
+            }
+
+            return earthQuake;
         }
 
         [HttpPut("{id:length(24)}")]

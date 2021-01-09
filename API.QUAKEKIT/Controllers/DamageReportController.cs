@@ -30,6 +30,20 @@ namespace API.QUAKEKIT.Controllers
             return CreatedAtRoute("GetDamageReport", new { id = damageReport.drID.ToString() }, damageReport);
         }
 
+        [AllowAnonymous]
+        [HttpGet("{id:length(24)}", Name = "GetDamageReport")]
+        public ActionResult<DamageReport> Get(string id)
+        {
+            var damageReport = _damageReportService.Get(id);
+
+            if (damageReport == null)
+            {
+                return NotFound();
+            }
+
+            return damageReport;
+        }
+
         [HttpPut("{id:length(24)}")]
         public IActionResult Update(string id, DamageReport damageReportIn)
         {

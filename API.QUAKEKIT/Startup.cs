@@ -37,6 +37,7 @@ namespace API.QUAKEKIT
             services.AddSingleton<EmergencyContactService>();
             services.AddSingleton<DamageReportService>();
             services.AddSingleton<EarthQuakeService>();
+            services.AddSingleton<MeetingAreaService>();
 
             services.AddControllers();
 
