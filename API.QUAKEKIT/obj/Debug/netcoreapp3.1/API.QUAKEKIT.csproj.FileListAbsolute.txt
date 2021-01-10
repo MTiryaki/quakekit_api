@@ -26,6 +26,7 @@
 /Users/hbatuhankurt/Projects/QUAKEKIT/API.QUAKEKIT/bin/Debug/netcoreapp3.1/runtimes/win/native/libzstd.dll
 /Users/hbatuhankurt/Projects/QUAKEKIT/API.QUAKEKIT/bin/Debug/netcoreapp3.1/runtimes/win/native/snappy32.dll
 /Users/hbatuhankurt/Projects/QUAKEKIT/API.QUAKEKIT/bin/Debug/netcoreapp3.1/runtimes/win/native/snappy64.dll
+/Users/hbatuhankurt/Projects/QUAKEKIT/API.QUAKEKIT/obj/Debug/netcoreapp3.1/API.QUAKEKIT.csprojAssemblyReference.cache
 /Users/hbatuhankurt/Projects/QUAKEKIT/API.QUAKEKIT/obj/Debug/netcoreapp3.1/API.QUAKEKIT.AssemblyInfoInputs.cache
 /Users/hbatuhankurt/Projects/QUAKEKIT/API.QUAKEKIT/obj/Debug/netcoreapp3.1/API.QUAKEKIT.AssemblyInfo.cs
 /Users/hbatuhankurt/Projects/QUAKEKIT/API.QUAKEKIT/obj/Debug/netcoreapp3.1/API.QUAKEKIT.csproj.CoreCompileInputs.cache
