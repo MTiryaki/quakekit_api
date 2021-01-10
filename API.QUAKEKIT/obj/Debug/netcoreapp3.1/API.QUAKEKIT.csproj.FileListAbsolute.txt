@@ -39,4 +39,3 @@
 /Users/hbatuhankurt/Projects/QUAKEKIT/API.QUAKEKIT/obj/Debug/netcoreapp3.1/API.QUAKEKIT.dll
 /Users/hbatuhankurt/Projects/QUAKEKIT/API.QUAKEKIT/obj/Debug/netcoreapp3.1/API.QUAKEKIT.pdb
 /Users/hbatuhankurt/Projects/QUAKEKIT/API.QUAKEKIT/obj/Debug/netcoreapp3.1/API.QUAKEKIT.genruntimeconfig.cache
-/Users/hbatuhankurt/Projects/QUAKEKIT/API.QUAKEKIT/obj/Debug/netcoreapp3.1/API.QUAKEKIT.csprojAssemblyReference.cache

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using API.QUAKEKIT.Models;
 using MongoDB.Driver;
 
@@ -9,6 +8,7 @@ namespace API.QUAKEKIT.Services
     {
         private readonly IMongoCollection<EmergencyContact> _emergencyContacts;
         private readonly IQuakeKitDatabaseSettings _quakeKitDatabaseSettings;
+
         public EmergencyContactService(IQuakeKitDatabaseSettings settings)
         {
             _quakeKitDatabaseSettings = settings;

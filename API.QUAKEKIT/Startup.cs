@@ -38,8 +38,12 @@ namespace API.QUAKEKIT
             services.AddSingleton<DamageReportService>();
             services.AddSingleton<EarthQuakeService>();
             services.AddSingleton<MeetingAreaService>();
+            services.AddSingleton<SecurityCheckService>();
+            services.AddSingleton<CityService>();
+            services.AddSingleton<DistrictService>();
 
             services.AddControllers();
+
 
             var key = Encoding.ASCII.GetBytes(appSettingsSection.Get<QuakeKitDatabaseSettings>().Secret);
             services.AddAuthentication(x =>

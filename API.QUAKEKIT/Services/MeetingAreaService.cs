@@ -8,6 +8,7 @@ namespace API.QUAKEKIT.Services
     {
         private readonly IMongoCollection<MeetingArea> _meetingAreas;
         private readonly IQuakeKitDatabaseSettings _quakeKitDatabaseSettings;
+
         public MeetingAreaService(IQuakeKitDatabaseSettings settings)
         {
             _quakeKitDatabaseSettings = settings;

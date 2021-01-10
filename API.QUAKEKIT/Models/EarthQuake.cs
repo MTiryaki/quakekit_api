@@ -15,15 +15,8 @@ namespace API.QUAKEKIT.Models
         //Boylam
         public string eqLng { get; set; }
         public string eqDepth { get; set; }
-        public EarthQuakeSize Sizes { get; set; }
-        public string LocationName { get; set; }
-        public string Attribute { get; set; }
-    }
-
-    public class EarthQuakeSize
-    {
-        public float MD { get; set; }
-        public float ML { get; set; }
-        public float MW { get; set; }
+        public string eqSize { get; set; }
+        public string eqLocationName { get; set; }
+        public string eqCity { get; set; }
     }
 }

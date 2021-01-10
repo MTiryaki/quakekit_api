@@ -15,6 +15,7 @@ namespace API.QUAKEKIT.Services
     {
         private readonly IMongoCollection<User> _users;
         private readonly IQuakeKitDatabaseSettings _quakeKitDatabaseSettings;
+
         public UserService(IQuakeKitDatabaseSettings settings)
         {
             _quakeKitDatabaseSettings = settings;

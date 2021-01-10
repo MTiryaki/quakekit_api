@@ -8,7 +8,8 @@ namespace API.QUAKEKIT.Models
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string dID { get; set; }
+        public string cID { get; set; }
+        public string distID { get; set; }
         public string distName { get; set; }
-        public City Cities { get; set; }
     }
 }

@@ -8,6 +8,7 @@ namespace API.QUAKEKIT.Services
     {
         private readonly IMongoCollection<EarthQuake> _earthQuakes;
         private readonly IQuakeKitDatabaseSettings _quakeKitDatabaseSettings;
+
         public EarthQuakeService(IQuakeKitDatabaseSettings settings)
         {
             _quakeKitDatabaseSettings = settings;
